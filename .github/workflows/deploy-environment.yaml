@@ -14,6 +14,6 @@ jobs:
         environment: ${{ inputs.environment }}
         steps:
             - name: Mostrar variables del entorno seleccionado
-              run:
+              run: |
                 echo "API_LEVEL:" ${{ vars.API_URL }}
                 echo "LOG_LEVEL:" ${{ vars.LOG_LEVEL }}
