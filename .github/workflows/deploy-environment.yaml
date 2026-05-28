@@ -13,6 +13,6 @@ jobs:
         runs-on: ubuntu-latest
         environment: ${{ inputs.environment }}
         steps:
-            - name: Mostrar variables del entorno seleccionado
+            - name: Mostrar entorno usado para realizar el despliegue
               run: |
                 echo "El entorno seleccionado para el despliegue ha sido:" ${{ inputs.environment }}
