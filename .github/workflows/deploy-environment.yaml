@@ -15,5 +15,4 @@ jobs:
         steps:
             - name: Mostrar variables del entorno seleccionado
               run: |
-                echo "API_LEVEL:" ${{ vars.API_URL }}
-                echo "LOG_LEVEL:" ${{ vars.LOG_LEVEL }}
+                echo "El entorno seleccionado para el despliegue ha sido:" ${{ inputs.environment }}
